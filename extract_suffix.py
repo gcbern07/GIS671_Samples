@@ -2,7 +2,7 @@
 filename = 'buildings.dbf'
 
 #Find the location of the period in the file name. This index number will be
-#assigned to the start variable
+#assigned to the variable named start
 start = filename.find('.')
 
 #string indexing is used to extract everything after the period
