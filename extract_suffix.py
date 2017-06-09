@@ -1,4 +1,7 @@
-#Set a variable named filename to be buildings.dbf. 
+##code sample for extracting suffix from file name
+#assumptions: file name will contain only one period, the period preceding the file suffix
+
+#assign name of file to variable named filename
 filename = 'buildings.dbf'
 
 #Find the location of the period in the file name. This index number will be
@@ -6,7 +9,7 @@ filename = 'buildings.dbf'
 start = filename.find('.')
 
 #string indexing is used to extract everything after the period
-#and assign it to the suffix variable. 1 is added to the start position
+#and assign it to the variable named suffix. 1 is added to the start position
 #to begin with the character after the period (not include the period). Nothing
 #is included after the colon to capture everything to the end of the value. It
 #will work regardless of the suffix length (.py, .shp, .jpeg)
